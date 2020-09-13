@@ -1,0 +1,59 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Electronics",
+      "display_name": "Electronics",
+      "description": "Whatever you need from Electronics"
+    },
+    {
+      "id": "2",
+      "name": "Food",
+      "display_name": "Food",
+      "description": "Whatever you need from Food"
+    },
+    {
+      "id": "3",
+      "name": "Clothes",
+      "display_name": "Clothes",
+      "description": "Whatever you need from Electronics"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "category": "Electronics",
+      "name": "laptop",
+      "display_name": "laptop",
+      "description": "laptop device"
+    },
+    {
+      "id": "3",
+      "category": "Clothes",
+      "name": "T-shirt",
+      "display_name": "T-shirt",
+      "description": "T-short to wear"
+    },
+    {
+      "id": "4",
+      "category": "Food",
+      "name": "Apple",
+      "display_name": "apple",
+      "description": "Apples to eat"
+    },
+    {
+      "id": "5",
+      "category": "Clothes",
+      "name": "Skirt",
+      "display_name": "skirt",
+      "description": "skirt to wear"
+    },
+    {
+      "id": "2",
+      "category": "Electronics",
+      "name": "Mobile",
+      "display_name": "mobile",
+      "description": "Mobile device"
+    }
+  ]
+}
