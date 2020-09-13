@@ -1,0 +1,307 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "defaultTitle",
+        "description": "defaultDescription",
+        "version": "0.1"
+    },
+    "servers": [
+        {
+            "url": "http://192.168.1.102:8000"
+        }
+    ],
+    "paths": {
+        "/products/5": {
+            "get": {
+                "description": "Auto generated using Swagger Inspector",
+                "responses": {
+                    "200": {
+                        "description": "Auto generated using Swagger Inspector",
+                        "content": {
+                            "application/json; charset=utf-8": {
+                                "schema": {
+                                    "type": "string"
+                                },
+                                "examples": {}
+                            }
+                        }
+                    }
+                },
+                "servers": [
+                    {
+                        "url": "http://192.168.1.102:8000"
+                    }
+                ]
+            },
+            "servers": [
+                {
+                    "url": "http://192.168.1.102:8000"
+                }
+            ]
+        },
+        "/categories/1": {
+            "get": {
+                "description": "Auto generated using Swagger Inspector",
+                "responses": {
+                    "200": {
+                        "description": "Auto generated using Swagger Inspector",
+                        "content": {
+                            "application/json; charset=utf-8": {
+                                "schema": {
+                                    "type": "string"
+                                },
+                                "examples": {}
+                            }
+                        }
+                    }
+                },
+                "servers": [
+                    {
+                        "url": "http://192.168.1.102:8000"
+                    }
+                ]
+            },
+            "servers": [
+                {
+                    "url": "http://192.168.1.102:8000"
+                }
+            ]
+        },
+        "/products/": {
+            "post": {
+                "description": "Auto generated using Swagger Inspector",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "description": {
+                                        "type": "string"
+                                    },
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "category": {
+                                        "type": "string"
+                                    },
+                                    "display_name": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "0": {
+                                    "value": "{\r\n      \"id\": \"5\",\r\n      \"category\": \"Clothes\",\r\n      \"name\": \"Skirt\",\r\n      \"display_name\": \"skirt\",\r\n      \"description\": \"skirt to wear\"\r\n    }"
+                                },
+                                "1": {
+                                    "value": "{\r\n      \"id\": \"2\",\r\n      \"category\": \"Electronics\",\r\n      \"name\": \"Mobile\",\r\n      \"display_name\": \"mobile\",\r\n      \"description\": \"Mobile device\"\r\n    }"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Auto generated using Swagger Inspector",
+                        "content": {
+                            "application/json; charset=utf-8": {
+                                "schema": {
+                                    "type": "string"
+                                },
+                                "examples": {}
+                            }
+                        }
+                    }
+                },
+                "servers": [
+                    {
+                        "url": "http://192.168.1.102:8000"
+                    }
+                ]
+            },
+            "servers": [
+                {
+                    "url": "http://192.168.1.102:8000"
+                }
+            ]
+        },
+        "/products/3": {
+            "patch": {
+                "description": "Auto generated using Swagger Inspector",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "description": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "0": {
+                                    "value": "{\r\n      \"description\": \"T-short to wear\"\r\n    }"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Auto generated using Swagger Inspector",
+                        "content": {
+                            "application/json; charset=utf-8": {
+                                "schema": {
+                                    "type": "string"
+                                },
+                                "examples": {}
+                            }
+                        }
+                    }
+                },
+                "servers": [
+                    {
+                        "url": "http://192.168.1.102:8000"
+                    }
+                ]
+            },
+            "servers": [
+                {
+                    "url": "http://192.168.1.102:8000"
+                }
+            ]
+        },
+        "/categories": {
+            "get": {
+                "description": "Auto generated using Swagger Inspector",
+                "responses": {
+                    "200": {
+                        "description": "Auto generated using Swagger Inspector",
+                        "content": {
+                            "application/json; charset=utf-8": {
+                                "schema": {
+                                    "type": "string"
+                                },
+                                "examples": {}
+                            }
+                        }
+                    }
+                },
+                "servers": [
+                    {
+                        "url": "http://192.168.1.102:8000"
+                    }
+                ]
+            },
+            "servers": [
+                {
+                    "url": "http://192.168.1.102:8000"
+                }
+            ]
+        },
+        "/products": {
+            "get": {
+                "description": "Auto generated using Swagger Inspector",
+                "responses": {
+                    "200": {
+                        "description": "Auto generated using Swagger Inspector",
+                        "content": {
+                            "application/json; charset=utf-8": {
+                                "schema": {
+                                    "type": "string"
+                                },
+                                "examples": {}
+                            }
+                        }
+                    }
+                },
+                "servers": [
+                    {
+                        "url": "http://192.168.1.102:8000"
+                    }
+                ]
+            },
+            "servers": [
+                {
+                    "url": "http://192.168.1.102:8000"
+                }
+            ]
+        },
+        "/products/2": {
+            "put": {
+                "description": "Auto generated using Swagger Inspector",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "description": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "0": {
+                                    "value": "{\r\n      \"description\": \"New mobile device\"\r\n    }"
+                                },
+                                "1": {
+                                    "value": "{\r\n      \"description\": \"New mobile device\"\r\n    }"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Auto generated using Swagger Inspector",
+                        "content": {
+                            "application/json; charset=utf-8": {
+                                "schema": {
+                                    "type": "string"
+                                },
+                                "examples": {}
+                            }
+                        }
+                    }
+                },
+                "servers": [
+                    {
+                        "url": "http://192.168.1.102:8000"
+                    }
+                ]
+            },
+            "delete": {
+                "description": "Auto generated using Swagger Inspector",
+                "responses": {
+                    "200": {
+                        "description": "Auto generated using Swagger Inspector",
+                        "content": {
+                            "application/json; charset=utf-8": {
+                                "schema": {
+                                    "type": "string"
+                                },
+                                "examples": {}
+                            }
+                        }
+                    }
+                },
+                "servers": [
+                    {
+                        "url": "http://192.168.1.102:8000"
+                    }
+                ]
+            },
+            "servers": [
+                {
+                    "url": "http://192.168.1.102:8000"
+                }
+            ]
+        }
+    }
+}
