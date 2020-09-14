@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js",
+    "test": "jest --verbose --coverage ",
+    "build-doc": "jsdoc -c jsdoc.json -r ."
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,16 @@
   },
   "homepage": "https://github.com/ashjan-401-advanced-javascript/api-server#readme",
   "dependencies": {
-    "json-server": "^0.16.1"
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "json-server": "^0.16.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "@code-fellows/supergoose": "^1.0.11",
+    "jest": "^26.4.2",
+    "jsdoc": "^3.6.5",
+    "supertest": "^4.0.2"
   }
 }
