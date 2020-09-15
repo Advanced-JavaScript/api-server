@@ -1,4 +1,5 @@
 'use strict';
+
 const { apiServer } = require('../lib/server.js');
 const supergoose = require('@code-fellows/supergoose');
 const mockRequest = supergoose(apiServer);
