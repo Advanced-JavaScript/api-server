@@ -34,10 +34,21 @@ What the terminal should look like after some requests:
 
 ![](./assets/terminal.JPG)
 
+## Technologies
+
+- Express
+- Express Router
+- MongoDB (Mongoose)
+- Swagger
+- Jest
+- Cors and Morgan
+
+
 ## Resources:
 
 [Swagger Link](https://app.swaggerhub.com/apis/Ashjan/docs/0.1)
+[Another Swagger Link](https://app.swaggerhub.com/apis/Ashjan/store/0.1#/)
 
 ### UML
 
-![](./assets/uml-07.jpg)
+![](./assets/uml-08.jpg)
