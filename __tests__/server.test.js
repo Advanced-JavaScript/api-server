@@ -5,7 +5,17 @@ const mockRequest = supertest(apiServer);
 require('@code-fellows/supergoose');
 
 jest.timeout = 3000;
-
+let newCat = {
+  name: "Clothes",
+  display_name: "Clothes",
+  description: "Whatever you need from Electronics"
+};
+let newPro = {
+  category: "Clothes",
+  name: "skirt",
+  display_name: "Clothes",
+  description: "Whatever you need from Electronics"
+};
 
 describe('sever', () => {
   it('should respond with 404 on an invalid route', () => {
@@ -29,95 +39,50 @@ describe('sever', () => {
     });
   });
   it('should add a new category', () => {
-    let newCat = {
-      name: "Clothes",
-      display_name: "Clothes",
-      description: "Whatever you need from Electronics"
-    };
     return mockRequest.post('/categories').send(newCat).then(results => {
       expect(results.status).toBe(201);
     });
   });
   it('should add a new product', () => {
-    let newPro = {
-      category: "Clothes",
-      name: "skirt",
-      display_name: "Clothes",
-      description: "Whatever you need from Electronics"
-    };
     return mockRequest.post('/products').send(newPro).then(results => {
       expect(results.status).toBe(201);
     });
   });
   it('should delete a product', async () => {
-    let newPro = {
-      category: "Clothes",
-      name: "skirt",
-      display_name: "Clothes",
-      description: "Whatever you need from Electronics"
-    };
     const results = await mockRequest.post('/products').send(newPro);
     return mockRequest.delete(`/products/${results.body._id}`).then(result => {
       expect(result.status).toBe(200);
     });
   });
   it('should delete a category', async () => {
-    let newCat = {
-      name: "Clothes",
-      display_name: "Clothes",
-      description: "Whatever you need from Electronics"
-    };
     const results = await mockRequest.post('/categories').send(newCat);
     return mockRequest.delete(`/categories/${results.body._id}`).then(result => {
       expect(result.status).toBe(200);
     });
   });
   it('should update a category', async () => {
-    let newCat = {
-      name: "Clothes",
-      display_name: "Clothes",
-      description: "Whatever you need from Electronics"
-    };
     const results = await mockRequest.post(`/categories`).send(newCat);
-    return mockRequest.put(`/categories/${results.body._id}`).send({name:'new'}).then(result => {
+    return mockRequest.put(`/categories/${results.body._id}`).send({ name: 'new' }).then(result => {
       expect(result.status).toBe(200);
     });
   });
   it('should update a product', async () => {
-    let newPro = {
-      name: "Clothes",
-      category:"clothes",
-      display_name: "Clothes",
-      description: "Whatever you need from Electronics"
-    };
     const results = await mockRequest.post(`/products`).send(newPro);
-    return mockRequest.put(`/products/${results.body._id}`).send({name:'new'}).then(result => {
+    return mockRequest.put(`/products/${results.body._id}`).send({ name: 'new' }).then(result => {
       expect(result.status).toBe(200);
     });
   });
   it('should return a specific product', async () => {
-    let newPro = {
-      name: "Clothes",
-      category:"clothes",
-      display_name: "Clothes",
-      description: "Whatever you need from Electronics"
-    };
     const results = await mockRequest.post(`/products`).send(newPro);
     return mockRequest.get(`/products/${results.body._id}`).then(result => {
       expect(result.status).toBe(200);
     });
   });
   it('should return a specific category', async () => {
-    let newCat = {
-      name: "Clothes",
-      display_name: "Clothes",
-      description: "Whatever you need from Electronics"
-    };
     const results = await mockRequest.post(`/categories`).send(newCat);
     return mockRequest.get(`/categories/${results.body._id}`).then(result => {
       expect(result.status).toBe(200);
     });
   });
-
 
 });
