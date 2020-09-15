@@ -6,15 +6,15 @@ require('@code-fellows/supergoose');
 
 jest.timeout = 3000;
 let newCat = {
-  name: "Clothes",
-  display_name: "Clothes",
-  description: "Whatever you need from Electronics"
+  name: 'Clothes',
+  display_name: 'Clothes',
+  description: 'Whatever you need from Electronics',
 };
 let newPro = {
-  category: "Clothes",
-  name: "skirt",
-  display_name: "Clothes",
-  description: "Whatever you need from Electronics"
+  category: 'Clothes',
+  name: 'skirt',
+  display_name: 'Clothes',
+  description: 'Whatever you need from Electronics',
 };
 
 describe('sever', () => {
@@ -48,7 +48,7 @@ describe('sever', () => {
       expect(results.status).toBe(201);
     });
   });
-  it('should delete a product', async () => {
+  it('should delete a product', async() => {
     const results = await mockRequest.post('/products').send(newPro);
     return mockRequest.delete(`/products/${results.body._id}`).then(result => {
       expect(result.status).toBe(200);
