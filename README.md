@@ -51,4 +51,4 @@ What the terminal should look like after some requests:
 
 ### UML
 
-![](./assets/uml-08.jpg)
+![](./assets/uml-09.jpg)
